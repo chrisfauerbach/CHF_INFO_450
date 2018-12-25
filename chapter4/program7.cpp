@@ -1,4 +1,6 @@
 #include <iostream>
+//Apparently since conio.h isn't standard, it's not on the mac
+// what the heck book author?
 #include <conio.h>
 
 int main()
