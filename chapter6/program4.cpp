@@ -23,7 +23,9 @@ int main()
        cout << i+x << ' ' << f + x << "\n";
     }
 
-    /* CHF -  This is a fun way of rewriting above */
+    /* CHF -  This is a fun way of rewriting above 
+           -   especially useful when we get to structs and classes. (Chapter 10 and on)
+    */
     cout << "This is the latter: \n";
     i = j;
     f = g;
