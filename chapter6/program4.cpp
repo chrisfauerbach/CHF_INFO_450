@@ -32,6 +32,7 @@ int main()
     for (int x = 0; x< 10; x++){
         cout << i++ << ' ' << f++ << "\n";
     }
+    // CHF - What's the difference?
 
     return 0;
 }
