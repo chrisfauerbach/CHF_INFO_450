@@ -12,8 +12,8 @@ int rams_count;  // This is a global variable.
 
 int main()
 {
-    int i; // This is a POORLY NAMED local variable.
-    for (i=0; i < 10; i++)
+   // int i; // This is a POORLY NAMED local variable.
+    for (int i=0; i < 10; i++)
     {
         rams_count = i*2;
         func1();

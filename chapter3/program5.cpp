@@ -19,9 +19,10 @@ int main()
 void total(int x)
 {
     int sum = 0;//initialize to 0
-    int i, count;
+    //int i, count;
+    int count;
 
-    for (i=1; i<=x; i++)
+    for (int i=1; i<=x; i++)
     {
         sum = sum + i;
         for (count=0; count < 10; count ++){  //  This is just for spacing. 

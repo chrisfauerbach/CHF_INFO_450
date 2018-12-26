@@ -3,8 +3,8 @@ using namespace std;
 
 int main()
 {
-    int i;
-    for (i = 0; i < 5; i++)
+    //int i;
+    for (int i = 0; i < 5; i++)
     {
         cout << "The number " << i << " is: \n";
         switch(i){

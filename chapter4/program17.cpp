@@ -3,10 +3,10 @@ using namespace std;
 
 int main()
 {
-    int t;
+    //int t;
     int count;
 
-    for (t=0;t<100;t++){
+    for (int t=0;t<100;t++){
         count = 1;
         cout << t << ": "; //CHF Added this to figure out what was going on.
         for(;;){

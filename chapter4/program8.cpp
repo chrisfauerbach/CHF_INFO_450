@@ -3,11 +3,11 @@ using namespace std;
 
 int main()
 {
-    int x;
+    // int x;
     //CHF Adding instructions for the uninformed.
     cout << "Will loop until you type 123\n";
     
-    for (x=0; x!=123; )
+    for (int x=0; x!=123; )
     {
         cout << "Enter a number: ";
         cin >> x;

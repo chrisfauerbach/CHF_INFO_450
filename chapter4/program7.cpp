@@ -5,10 +5,10 @@
 
 int main()
 {
-    int i;
+   // int i;
     
     //print numbers until a key is pressed.
-    for (i=0;!kbhit();i++){
+    for (int i=0;!kbhit();i++){
         cout << i << ' ';
     }
     cout << "\n";

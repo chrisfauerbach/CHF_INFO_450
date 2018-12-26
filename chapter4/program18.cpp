@@ -9,11 +9,11 @@ using namespace std;
 // (email me:  chris@fauie.com )
 int main()
 {
-    int i;
-    int j;
+   // int i;
+   // int j;
 
-    for (i=2; i<1000; i++){
-        for (j=2;j <= (i/j); j++)
+    for (int i=2; i<=1000; i++){
+        for (int j=2;j <= (i/j); j++)
         {
             if (!(i%j)){
                // cout << i << " is NOT prime (" << j << ").\n";
@@ -25,3 +25,6 @@ int main()
     }
     return 0;
 }
+
+//CHF - Since I looked at this again, I forgot, but figured it out again.
+// CHF - Personal hint: check the range on the line that's 16.

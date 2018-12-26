@@ -9,8 +9,8 @@ using namespace std;
 
 int main()
 {
-    char letter;
-    for (letter='Z';letter >= 'A'; letter --){
+    // char letter;
+    for (char letter='Z';letter >= 'A'; letter --){
         cout << letter << " ";
     }
     cout << "\n";

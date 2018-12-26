@@ -7,8 +7,12 @@
 
 int main()
 {
+    /*
     unsigned char ch;
     ch = 32;
+    */
+    // CHF- Let's initialize this bad boy.
+    unsigned char ch = 32;
     while(ch) {
         cout << ch << " ";
         ch++;
