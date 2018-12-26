@@ -4,8 +4,12 @@ using namespace std;
 
 int main()
 {
-    int gallons ,liters; // The example code declares two variables
+    /* 
+       int gallons ,liters; // The example code declares two variables
                          // on one line.  I personally hate it.
+    */
+   int gallons;
+   int liters;
 
     cout << "Enter number of gallons: ";
     cin >> gallons;  //This inputs from the user 

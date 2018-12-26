@@ -12,9 +12,9 @@ int main()
      cin >> b;
      //CHF - I don't like the next line, but it's OK
      // my opinion is going to probably get annoying.
-     if (a<b) cout << "First number is less than second.\n";
+     if (a < b) cout << "First number is less than second.\n";
 /*
-     if (a<b){
+     if (a < b){
         cout << "First number is less than second.";
      } 
 */
