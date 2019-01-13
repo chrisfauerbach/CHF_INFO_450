@@ -1,4 +1,4 @@
-// Prigram # 2 - Using a variable
+// Program # 2 - Using a variable
 
 #include <iostream>
 using namespace std;

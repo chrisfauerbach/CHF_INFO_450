@@ -66,8 +66,25 @@ class: center, middle
 
 # Introduction
 
+Time to kahoot
+
+Get that required laptop:
+
+https://kahoot.it
+
 ---
 
+# 
+
+<div style="text-align:center;font-size: 2em;line-height:1.8em;">
+<strong>Why are you here?</strong><br/>
+
+<i>Besides this amazing beard...</i>
+
+<br/> What would help you enjoy this class?
+<br/> What do you want to learn?
+</div>
+---
 # 
 
 <div style="text-align:center;font-size: 2em;line-height:1.8em;">
@@ -326,11 +343,265 @@ int main()
 
 ---
 
+# Running!
+
+I'm a mac guy, not a Windows person.  <br/>
+
+This is what I do to run my sample program:<br/>
+
+```shell
+ls -latr
+touch program.cpp
+g++ program.cpp
+chmod +x a.out
+./a.out
+
+```
+<img style="width: 100%;" src="sample.png"/>
+---
+# Your turn!
+
+Open your books.  Chapter 2.   Find the first two programs.
+```c++
+/* Program 1
+Chris Fauerbach
+*/
+
+#include <iostream>
+using namespace std;
+
+// main() is where program execution begins
+// on a mac, this is compiled with `c++ program1.cpp`
+// then run with ./a.out
+
+int main()
+{
+  cout << "This is my first C++ program.\n";
+  return 0;
+
+}
+
+```
+---
+# Program 2 
+
+```c++
+// Program # 2 - Using a variable
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x; //  this declares variable x
+           // with type int
+
+    x = 1023;
+
+    cout << "This program prints the values of x: ";
+    cout << x; // This displays 1023
+    cout << "\n"; //CHF Adding new line.
+    return 0;
+}
+
+```
+---
+# Working with Variables
+
+* A variable is used to store information and is referenced or used by a program.
+
+* All variables in C++ are composed of three parts:
+   * Type
+   * Name
+   * Value
+      * <i>Values can be undefined</i> 
+---
+# Working with variables: <i>Names</i>
+
+In C++, names can include letters, number and underscores, yet they can not begin with a number or an underscore.
+* Good
+   * average
+   * daily_average
+* Bad
+   * _average
+   * 1daily
+* Names are case sensitive
+   * average != AVERAGE
+* No spaces or other special characters are allowed within a C++ variable name
+   * Total Amount
+   * Total!
+* Every programming language contains a few vocabulary words, or special 'keywords', that you need in order to use the language; these keywords can NOT be used in variable names.
+
+---
+# Common C++ Keywords
+
+<img src="keywords.png" width="100%"/>
+---
+# Working with variables - Types
+
+* C++ supports four simple types: boolean, character, integer & float
+
+* An Integer is a whole number, either positive or negative
+
+* An Integer value may be stored in an integer variable declared with the keyword <span style="color: blue">int</span>, <span style="color: blue">short int</span> or <span style="color: blue">long int</span>
+
+* A Floating-point number is a number that include decimal positions, such as 98.6, 1000.00002, and -3.85 
+
+* They may be stored in variables with type <span style="color: blue">float</span>, <span style="color: blue">double</span>, and <span style="color: blue">long double</span>
+
+* A <span style="color: blue">char</span> may hold any single symbol in the ASCII character set
+
+* Often it contains a letter of the alphabet, but it could include a space, digit, punctuation mark, arithmetic symbol, or other special symbol
+
+* A <span style="color: blue">boolean</span> variable is one that only supports values of true and false
+
+
+---
+# Working with Variables - Sizes
+
+<img src="sizes.png" width="100%"/>
+
+The size of the given data type is dependent on the compiler and/or the computer architecture.
+
+C++ does guarantee that the basic types will have a minimum size.
+
+---
+# Variable Declarations
+
+* A declaration associates a type and a name with a variable and allows the complier to interpret the statements correctly 
+* To declare a variable, you list its name and its type
+
+* A variable declaration is a C++ statement, so it must end with a semicolon
+
+* If you write a function that contains variables of diverse types, each variable must be declared in a statement of its own
+
+* If you want to declare two or more variables of the same type, you may declare them in the same statement
+
+* A variable can also be initialized as part of the declaration statement
+
+* When a variable declaration is executed, memory is allocated for the variable. This memory must be initialized to contain some definite value before the variable should be used in an expression.
+
+---
+# Variable Declarations
+
+## Examples
+Declare
+* int i;
+* int x, y, z;  <strong><span style="color: red">#CHF - but don't</span></strong>
+* double area;
+* char my_letter;
+* <span style="color: red">int i, double area;</span> # CHF - this is invalid
+
+Declare and Initialize
+* int i = 200;
+* int x = 10, y = 20, z = 30; # CHF - but don't do this 
+* double area = 20.1;
+* char my_letter = 'A';
+* <span style="color: red">char invalid_assignment = "B";</span>    # CHF - Must be single ticks '
+
+
+---
+# The <span style="color: blue">const</span> qualifier
+
+* A variable that does not change value does not need to be declared as a variable.
+* Instead, it should be a constant:
+```c++
+const double MINIMUM_VALUE = 25.0;
+```
+declares a constant named MINIMUM_VALUE that can be used as a variable but cannot be changed during the program execution.
+---
+# C++ binary arithmetic operators
+
+C++ provides five simple arithmetic operators for creating arithmetic expressions: 
+* <span style="color: blue">\+</span> addition
+* <span style="color: blue">\-</span> subtraction
+* <span style="color: blue">\*</span> multiplication
+* <span style="color: blue">%</span> modulus
+
+Examples:
+```c++
+int a = 10;
+int b = 12;
+int c;
+int d;
+int e;
+c = a + b;
+d = c / 2;
+e = d % 5;
+cout << c << endl; # What's c?
+cout << d << endl; # What's d?
+cout << e << endl; # What's e?
+
+```
+	
+---
+# Putting it all together - Circle program
+```c++
+// Sample program that calculates the 
+// circumference and area of a circle
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  const double PI = 3.14;
+  int radius = 5;
+  double area;
+  double circumference;
+
+  circumference = 2 * PI * radius;
+  area = PI * (radius * radius);  // pow(radius, 2) ?
+  cout << "The circumference is: << circumference << endl;
+  cout << "The area is: << area << endl;
+
+  return 0;
+}
+```
+---
+# Practice - Muscle Memory
+
+* Launch MS VS C++ and create new console program
+* Familiarize yourself with the IDE
+* Where is the solution explorer?
+* Open new project : Circle Program
+* Where are your source files located?
+* Build your program
+* Where is the executable?
+* Execute your program
+
+* Stay and write more code, or go home and write more code.
+* Create a public github repository
+   * Name it: <i>initials</i>_info_450_spring_2019
+   * Make a top level directory called `chapter2`
+   * Make one program for each example in the book.
+   * program1.cpp, program2.cpp, program3.cpp, program4.cpp
+
+Program 4 ends with:
+```c++
+cout << "Liters: " << liters << "\n";
+```
 ---
 
 ---
 
 ---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+
 
 ---
     </textarea>
